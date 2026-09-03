@@ -136,82 +136,86 @@ def get_audio_xml(text: str, prompt_id: Optional[str] = None) -> str:
     public_url = os.getenv("PUBLIC_URL")
     api_key = os.getenv("SARVAM_API_KEY")
 
+    # Cache path (absolute)
+    audio_dir = Path(__file__).parent.resolve() / "static" / "audio"
+    audio_dir.mkdir(exist_ok=True, parents=True)
+    
+    # Predictable name if prompt_id is present, otherwise md5 of content
+    if prompt_id:
+        filename = f"{prompt_id}.wav"
+    else:
+        text_hash = hashlib.md5(text.encode("utf-8")).hexdigest()
+        filename = f"{text_hash}.wav"
+        
+    filepath = audio_dir / filename
+
+    # 1. If audio file is already cached on disk (including pre-synthesized prompts), serve <Play> URL immediately
+    if filepath.exists():
+        return f"<Play>{public_url}/audio/{filename}</Play>"
+
+    # 2. If no API key and file not cached, return safe ASCII text inside <Speak> (Vobiz drops non-ASCII Devanagari)
     if not api_key or api_key == "your_sarvam_api_key":
-        # Fall back to standard Vobiz TTS
-        return f"<Speak>{text}</Speak>"
+        clean_text = text if text.isascii() else "Gram Panchayat notification."
+        return f"<Speak>{clean_text}</Speak>"
 
     try:
-        # Cache path
-        audio_dir = Path("static/audio")
-        audio_dir.mkdir(exist_ok=True, parents=True)
+        # Request synthesis if not cached
+        import time as pytime
+        from sarvamai import SarvamAI
+        client = SarvamAI(api_subscription_key=api_key)
         
-        # Predictable name if prompt_id is present, otherwise md5 of content
-        if prompt_id:
-            filename = f"{prompt_id}.wav"
-        else:
-            text_hash = hashlib.md5(text.encode("utf-8")).hexdigest()
-            filename = f"{text_hash}.wav"
-            
-        filepath = audio_dir / filename
-
-        # Request if not cached
-        if not filepath.exists():
-            import time as pytime
-            from sarvamai import SarvamAI
-            client = SarvamAI(api_subscription_key=api_key)
-            
-            # Read settings from env, default to Marathi (mr-IN) / Shreya voice
-            lang_code = os.getenv("SARVAM_TTS_LANGUAGE", "mr-IN")
-            speaker = os.getenv("SARVAM_TTS_SPEAKER", "shreya")
-            
-            # Translate if English is detected (with retries)
-            if re.search(r'[a-zA-Z]{2,}', text):
-                for attempt in range(2):
-                    try:
-                        res = client.text.translate(
-                            input=text,
-                            source_language_code="en-IN",
-                            target_language_code="mr-IN"
-                        )
-                        if res and hasattr(res, "translated_text") and res.translated_text:
-                            text = res.translated_text
-                            break
-                    except Exception as e:
-                        print(f"[TRANSLATE ATTEMPT {attempt+1} FAILED] {e}")
-                        pytime.sleep(0.5)
-
-            # Synthesize voice (with retries)
-            synthesized_data = None
+        # Read settings from env, default to Marathi (mr-IN) / Shreya voice
+        lang_code = os.getenv("SARVAM_TTS_LANGUAGE", "mr-IN")
+        speaker = os.getenv("SARVAM_TTS_SPEAKER", "shreya")
+        
+        # Translate if English is detected (with retries)
+        if re.search(r'[a-zA-Z]{2,}', text):
             for attempt in range(2):
                 try:
-                    res = client.text_to_speech.convert(
-                        text=text,
-                        target_language_code=lang_code,
-                        model="bulbul:v3",
-                        speaker=speaker
+                    res = client.text.translate(
+                        input=text,
+                        source_language_code="en-IN",
+                        target_language_code="mr-IN"
                     )
-                    if res and res.audios:
-                        synthesized_data = res.audios[0]
+                    if res and hasattr(res, "translated_text") and res.translated_text:
+                        text = res.translated_text
                         break
                 except Exception as e:
-                    print(f"[SYNTHESIS ATTEMPT {attempt+1} FAILED] {e}")
+                    print(f"[TRANSLATE ATTEMPT {attempt+1} FAILED] {e}")
                     pytime.sleep(0.5)
-                    
-            if not synthesized_data:
-                raise Exception("Failed to synthesize audio after retries.")
 
-            import base64
-            audio_bytes = base64.b64decode(synthesized_data)
-            with open(filepath, "wb") as f:
-                f.write(audio_bytes)
+        # Synthesize voice (with retries)
+        synthesized_data = None
+        for attempt in range(2):
+            try:
+                res = client.text_to_speech.convert(
+                    text=text,
+                    target_language_code=lang_code,
+                    model="bulbul:v3",
+                    speaker=speaker
+                )
+                if res and res.audios:
+                    synthesized_data = res.audios[0]
+                    break
+            except Exception as e:
+                print(f"[SYNTHESIS ATTEMPT {attempt+1} FAILED] {e}")
+                pytime.sleep(0.5)
+                
+        if not synthesized_data:
+            raise Exception("Failed to synthesize audio after retries.")
+
+        import base64
+        audio_bytes = base64.b64decode(synthesized_data)
+        with open(filepath, "wb") as f:
+            f.write(audio_bytes)
 
         # Return Vobiz Play XML referencing the cached static audio file
         return f"<Play>{public_url}/audio/{filename}</Play>"
 
     except Exception as e:
         print(f"[ERROR] Sarvam TTS generation failed: {e}")
-        # Fallback to standard Speak XML
-        return f"<Speak>{text}</Speak>"
+        clean_text = text if text.isascii() else "Gram Panchayat notification."
+        return f"<Speak>{clean_text}</Speak>"
 
 # --- Vobiz API Trigger Call Function ---
 def trigger_vobiz_call(to_number: str, call_type: str, call_id: str, villager_id: str) -> tuple[Optional[str], Optional[str]]:
