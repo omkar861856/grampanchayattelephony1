@@ -212,7 +212,7 @@ def get_audio_xml(text: str, prompt_id: Optional[str] = None) -> str:
         return f"<Speak>{text}</Speak>"
 
 # --- Vobiz API Trigger Call Function ---
-def trigger_vobiz_call(to_number: str, call_type: str, call_id: str, villager_id: str) -> Optional[str]:
+def trigger_vobiz_call(to_number: str, call_type: str, call_id: str, villager_id: str) -> tuple[Optional[str], Optional[str]]:
     load_dotenv(override=True)
     auth_id = os.getenv("VOBIZ_AUTH_ID")
     auth_token = os.getenv("VOBIZ_AUTH_TOKEN")
@@ -220,8 +220,14 @@ def trigger_vobiz_call(to_number: str, call_type: str, call_id: str, villager_id
     public_url = os.getenv("PUBLIC_URL")
 
     if not auth_id or not auth_token or auth_id == "your_vobiz_auth_id":
-        print("[ERROR] Missing VOBIZ_AUTH_ID or VOBIZ_AUTH_TOKEN credentials in .env")
-        return None
+        err = "Missing VOBIZ_AUTH_ID or VOBIZ_AUTH_TOKEN credentials"
+        print(f"[ERROR] {err}")
+        return None, err
+
+    if not from_number or from_number == "+91XXXXXXXXXX":
+        err = "Missing or default FROM_NUMBER credential"
+        print(f"[ERROR] {err}")
+        return None, err
 
     url = f"https://api.vobiz.ai/api/v1/Account/{auth_id}/Call/"
     
@@ -248,13 +254,16 @@ def trigger_vobiz_call(to_number: str, call_type: str, call_id: str, villager_id
         res = requests.post(url, json=payload, headers=headers, timeout=10)
         if res.status_code in [200, 201]:
             res_data = res.json()
-            return res_data.get("CallUUID") or res_data.get("request_uuid") or res_data.get("id")
+            call_uuid = res_data.get("CallUUID") or res_data.get("request_uuid") or res_data.get("id")
+            return call_uuid, None
         else:
-            print(f"Vobiz Call API error: {res.status_code} - {res.text}")
-            return None
+            err = f"HTTP {res.status_code} - {res.text}"
+            print(f"Vobiz Call API error: {err}")
+            return None, err
     except Exception as e:
-        print(f"Error connecting to Vobiz Call API: {e}")
-        return None
+        err = f"Connection error: {e}"
+        print(f"Error connecting to Vobiz Call API: {err}")
+        return None, err
 
 # --- API Endpoints ---
 
@@ -465,7 +474,7 @@ def background_trigger_campaign(camp: CampaignSchema, calls_state: List[dict]):
         
         # Trigger Vobiz API
         try:
-            uuid_val = trigger_vobiz_call(phone, camp.type, call_id, v_id)
+            uuid_val, err_msg = trigger_vobiz_call(phone, camp.type, call_id, v_id)
             if uuid_val:
                 c_log["vobiz_uuid"] = uuid_val
                 c_log["status"] = "queued"
@@ -477,7 +486,7 @@ def background_trigger_campaign(camp: CampaignSchema, calls_state: List[dict]):
                 c_log["status"] = "failed"
                 c_log["history"].append({
                     "time": datetime.datetime.utcnow().isoformat() + "Z", 
-                    "event": "Vobiz trigger failed"
+                    "event": f"Vobiz trigger failed: {err_msg or 'Unknown Error'}"
                 })
         except Exception as e:
             c_log["status"] = "failed"
