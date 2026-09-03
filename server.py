@@ -207,6 +207,7 @@ def get_audio_xml(text: str, prompt_id: Optional[str] = None) -> str:
 
 # --- Vobiz API Trigger Call Function ---
 def trigger_vobiz_call(to_number: str, call_type: str, call_id: str, villager_id: str) -> Optional[str]:
+    load_dotenv(override=True)
     auth_id = os.getenv("VOBIZ_AUTH_ID")
     auth_token = os.getenv("VOBIZ_AUTH_TOKEN")
     from_number = os.getenv("FROM_NUMBER")
