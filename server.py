@@ -11,8 +11,14 @@ from fastapi.responses import Response, FileResponse, HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-import requests
+import mimetypes
 from dotenv import load_dotenv
+
+# Ensure proper MIME types for static files in Linux environments
+mimetypes.add_type("text/css", ".css")
+mimetypes.add_type("application/javascript", ".js")
+mimetypes.add_type("image/svg+xml", ".svg")
+mimetypes.add_type("audio/x-wav", ".wav")
 
 # Load Environment Variables
 load_dotenv(override=True)
@@ -1020,7 +1026,7 @@ def hangup_callback(
 
 
 # Serve static web dashboard
-static_path = Path("static")
+static_path = (Path(__file__).parent.resolve() / "static")
 static_path.mkdir(exist_ok=True)
 
-app.mount("/", StaticFiles(directory="static", html=True), name="static")
+app.mount("/", StaticFiles(directory=str(static_path), html=True), name="static")
