@@ -15,7 +15,7 @@ import requests
 from dotenv import load_dotenv
 
 # Load Environment Variables
-load_dotenv()
+load_dotenv(override=True)
 
 # App Definition
 app = FastAPI(
@@ -156,15 +156,14 @@ def get_audio_xml(text: str, prompt_id: Optional[str] = None) -> str:
             lang_code = os.getenv("SARVAM_TTS_LANGUAGE", "mr-IN")
             speaker = os.getenv("SARVAM_TTS_SPEAKER", "shreya")
             
-            # Translate if English is detected (with retries and timeout)
+            # Translate if English is detected (with retries)
             if re.search(r'[a-zA-Z]{2,}', text):
                 for attempt in range(2):
                     try:
                         res = client.text.translate(
                             input=text,
                             source_language_code="en-IN",
-                            target_language_code="mr-IN",
-                            timeout=8.0  # Limit timeout for poor network conditions
+                            target_language_code="mr-IN"
                         )
                         if res and hasattr(res, "translated_text") and res.translated_text:
                             text = res.translated_text
@@ -173,7 +172,7 @@ def get_audio_xml(text: str, prompt_id: Optional[str] = None) -> str:
                         print(f"[TRANSLATE ATTEMPT {attempt+1} FAILED] {e}")
                         pytime.sleep(0.5)
 
-            # Synthesize voice (with retries and timeout)
+            # Synthesize voice (with retries)
             synthesized_data = None
             for attempt in range(2):
                 try:
@@ -181,8 +180,7 @@ def get_audio_xml(text: str, prompt_id: Optional[str] = None) -> str:
                         text=text,
                         target_language_code=lang_code,
                         model="bulbul:v3",
-                        speaker=speaker,
-                        timeout=8.0  # Limit timeout for poor network conditions
+                        speaker=speaker
                     )
                     if res and res.audios:
                         synthesized_data = res.audios[0]
