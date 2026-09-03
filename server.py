@@ -132,6 +132,7 @@ def log_call_event(call_id: str, event_text: str, digits: Optional[str] = None):
 
 # --- Sarvam AI Text to Speech Helper (with Cache) ---
 def get_audio_xml(text: str, prompt_id: Optional[str] = None) -> str:
+    load_dotenv(override=True)
     public_url = os.getenv("PUBLIC_URL")
     api_key = os.getenv("SARVAM_API_KEY")
 
