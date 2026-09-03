@@ -1,0 +1,1313 @@
+[
+  {
+    "id": "c_e86e080d",
+    "villager_id": "v_b1517d4c",
+    "villager_name": "Omkar Lolge",
+    "phone": "+919321089065",
+    "type": "survey",
+    "status": "answered",
+    "timestamp": "2026-07-10T05:33:01.741700Z",
+    "survey_results": {},
+    "summoning_status": null,
+    "announcement_played": null,
+    "vobiz_uuid": "7b4388e6-3fbc-4b76-8ca2-94b7056f19c4",
+    "campaign_details": {
+      "q1": "Rate water supply cleanliness and frequency: press 1 for poor, up to 5 for excellent.",
+      "q2": "Would you recommend the new road repair scheme? Press 1 for Yes, 2 for No.",
+      "q3": "Overall experience with the Panchayat office: Press 1 for Good, 2 for Neutral, 3 for Poor."
+    }
+  },
+  {
+    "id": "c_2918db0a",
+    "villager_id": "v_b1517d4c",
+    "villager_name": "Omkar Lolge",
+    "phone": "+919321089065",
+    "type": "survey",
+    "status": "answered",
+    "timestamp": "2026-07-10T05:44:35.534065Z",
+    "survey_results": {},
+    "summoning_status": null,
+    "announcement_played": null,
+    "vobiz_uuid": "61a0b572-f8d3-42f7-a0cd-85bec1b020b3",
+    "campaign_details": {
+      "q1": "Rate water supply cleanliness and frequency: press 1 for poor, up to 5 for excellent.",
+      "q2": "Would you recommend the new road repair scheme? Press 1 for Yes, 2 for No.",
+      "q3": "Overall experience with the Panchayat office: Press 1 for Good, 2 for Neutral, 3 for Poor."
+    }
+  },
+  {
+    "id": "c_4ef3c0b9",
+    "villager_id": "v_b1517d4c",
+    "villager_name": "Omkar Lolge",
+    "phone": "+919321089065",
+    "type": "survey",
+    "status": "answered",
+    "timestamp": "2026-07-10T05:51:09.843830Z",
+    "survey_results": {},
+    "summoning_status": null,
+    "announcement_played": null,
+    "vobiz_uuid": "10b8e746-ea2e-4869-b961-42ba53cc8685",
+    "campaign_details": {
+      "q1": "Rate water supply cleanliness and frequency: press 1 for poor, up to 5 for excellent.",
+      "q2": "Would you recommend the new road repair scheme? Press 1 for Yes, 2 for No.",
+      "q3": "Overall experience with the Panchayat office: Press 1 for Good, 2 for Neutral, 3 for Poor."
+    }
+  },
+  {
+    "id": "c_92d44940",
+    "villager_id": "v_b1517d4c",
+    "villager_name": "Omkar Lolge",
+    "phone": "+919321089065",
+    "type": "summoning",
+    "status": "answered",
+    "timestamp": "2026-07-10T05:52:11.843922Z",
+    "survey_results": null,
+    "summoning_status": "confirmed",
+    "announcement_played": null,
+    "vobiz_uuid": "7daf4264-f5f5-4af2-b662-9e56252ef4da",
+    "campaign_details": {
+      "date": "July 15",
+      "time": "2:00 PM",
+      "purpose": "crop subsidy distribution and document validation"
+    }
+  },
+  {
+    "id": "c_e40f93fc",
+    "villager_id": "v_b1517d4c",
+    "villager_name": "Omkar Lolge",
+    "phone": "+919321089065",
+    "type": "announcement",
+    "status": "completed",
+    "timestamp": "2026-07-10T06:06:30.101411Z",
+    "survey_results": null,
+    "summoning_status": null,
+    "announcement_played": true,
+    "vobiz_uuid": "13925c4d-1744-4eef-89e8-87c033927a85",
+    "campaign_details": {
+      "announcement": "Attention all villagers. The annual free medical camp is scheduled at the community hall this Sunday from 9 AM to 3 PM. Please bring your health cards."
+    },
+    "digits_pressed": [],
+    "history": [
+      {
+        "time": "2026-07-10T06:06:30.101421Z",
+        "event": "Campaign call initiated"
+      },
+      {
+        "time": "2026-07-10T06:06:30.572377Z",
+        "event": "Call successfully queued on Vobiz"
+      },
+      {
+        "time": "2026-07-10T06:06:38.222071Z",
+        "event": "Call answered by user"
+      },
+      {
+        "time": "2026-07-10T06:06:38.223022Z",
+        "event": "Broadcast announcement completed"
+      },
+      {
+        "time": "2026-07-10T06:06:55.270521Z",
+        "event": "Call answered by user"
+      },
+      {
+        "time": "2026-07-10T06:06:55.272994Z",
+        "event": "Broadcast announcement completed"
+      }
+    ]
+  },
+  {
+    "id": "c_c660f922",
+    "villager_id": "v_b1517d4c",
+    "villager_name": "Omkar Lolge",
+    "phone": "+919321089065",
+    "type": "survey",
+    "status": "answered",
+    "timestamp": "2026-07-10T06:28:23.007307Z",
+    "survey_results": {},
+    "summoning_status": null,
+    "announcement_played": null,
+    "vobiz_uuid": "6d3616f0-fdae-4e19-81e6-f90a27a3ccf3",
+    "campaign_details": {
+      "q1": "\u092a\u093e\u0923\u0940\u092a\u0941\u0930\u0935\u0920\u094d\u092f\u093e\u091a\u0940 \u0938\u094d\u0935\u091a\u094d\u091b\u0924\u093e \u0906\u0923\u093f \u0935\u093e\u0930\u0902\u0935\u093e\u0930\u0924\u093e: \u0916\u0930\u093e\u092c \u0938\u093e\u0920\u0940 1 \u0906\u0923\u093f \u0909\u0924\u094d\u0915\u0943\u0937\u094d\u091f \u0938\u093e\u0920\u0940 5 \u092a\u0930\u094d\u092f\u0902\u0924 \u0926\u093e\u092c\u093e.",
+      "q2": "\u0924\u0941\u092e\u094d\u0939\u0940 \u0928\u0935\u0940\u0928 \u0930\u0938\u094d\u0924\u0947 \u0926\u0941\u0930\u0941\u0938\u094d\u0924\u0940 \u092f\u094b\u091c\u0928\u0947\u091a\u0940 \u0936\u093f\u092b\u093e\u0930\u0938 \u0915\u0930\u093e\u0932 \u0915\u093e? \u0939\u094b\u092f \u0938\u093e\u0920\u0940 1 \u0906\u0923\u093f \u0928\u093e\u0939\u0940 \u0938\u093e\u0920\u0940 2 \u0926\u093e\u092c\u093e.",
+      "q3": "\u092a\u0902\u091a\u093e\u092f\u0924\u0940 \u0915\u093e\u0930\u094d\u092f\u093e\u0932\u092f\u093e\u0924 \u090f\u0915\u0942\u0923 \u0905\u0928\u0941\u092d\u0935: \u091a\u093e\u0902\u0917\u0932\u094d\u092f\u093e\u0938\u093e\u0920\u0940 \u092a\u094d\u0930\u0947\u0938 1, \u0924\u091f\u0938\u094d\u0925\u0924\u0947\u0938\u093e\u0920\u0940 2, \u0916\u0930\u093e\u092c\u0938\u093e\u0920\u0940 3."
+    },
+    "digits_pressed": [],
+    "history": [
+      {
+        "time": "2026-07-10T06:28:23.007321Z",
+        "event": "Campaign call initiated"
+      },
+      {
+        "time": "2026-07-10T06:28:23.529457Z",
+        "event": "Call successfully queued on Vobiz"
+      },
+      {
+        "time": "2026-07-10T06:28:30.790904Z",
+        "event": "Call answered by user"
+      },
+      {
+        "time": "2026-07-10T06:28:59.083608Z",
+        "event": "Call answered by user"
+      }
+    ]
+  },
+  {
+    "id": "c_decf3db3",
+    "villager_id": "v_b1517d4c",
+    "villager_name": "Omkar Lolge",
+    "phone": "+919321089065",
+    "type": "announcement",
+    "status": "completed",
+    "timestamp": "2026-07-10T06:29:17.156176Z",
+    "survey_results": null,
+    "summoning_status": null,
+    "announcement_played": true,
+    "vobiz_uuid": "d94e13f8-30e8-4ca5-946b-848077f54c85",
+    "campaign_details": {
+      "announcement": "\u0938\u0930\u094d\u0935 \u0917\u094d\u0930\u093e\u092e\u0938\u094d\u0925\u093e\u0902\u0928\u094b, \u0915\u0943\u092a\u092f\u093e \u0932\u0915\u094d\u0937 \u0926\u094d\u092f\u093e. \u0935\u093e\u0930\u094d\u0937\u093f\u0915 \u0928\u093f\u0903\u0936\u0941\u0932\u094d\u0915 \u0935\u0948\u0926\u094d\u092f\u0915\u0940\u092f \u0936\u093f\u092c\u093f\u0930 \u092f\u093e \u0930\u0935\u093f\u0935\u093e\u0930\u0940 \u0938\u0915\u093e\u0933\u0940 9 \u0924\u0947 \u0926\u0941\u092a\u093e\u0930\u0940 3 \u0935\u093e\u091c\u0947\u092a\u0930\u094d\u092f\u0902\u0924 \u0938\u093e\u092e\u0941\u0926\u093e\u092f\u093f\u0915 \u0938\u092d\u093e\u0917\u0943\u0939\u093e\u0924 \u0906\u092f\u094b\u091c\u093f\u0924 \u0906\u0939\u0947. \u0915\u0943\u092a\u092f\u093e \u0924\u0941\u092e\u091a\u0947 \u0906\u0930\u094b\u0917\u094d\u092f \u0915\u093e\u0930\u094d\u0921 \u0906\u0923\u093e."
+    },
+    "digits_pressed": [],
+    "history": [
+      {
+        "time": "2026-07-10T06:29:17.156189Z",
+        "event": "Campaign call initiated"
+      },
+      {
+        "time": "2026-07-10T06:29:17.554401Z",
+        "event": "Call successfully queued on Vobiz"
+      },
+      {
+        "time": "2026-07-10T06:29:22.283048Z",
+        "event": "Call answered by user"
+      },
+      {
+        "time": "2026-07-10T06:29:22.284432Z",
+        "event": "Broadcast announcement completed"
+      },
+      {
+        "time": "2026-07-10T06:29:35.617233Z",
+        "event": "Call answered by user"
+      },
+      {
+        "time": "2026-07-10T06:29:35.618614Z",
+        "event": "Broadcast announcement completed"
+      }
+    ]
+  },
+  {
+    "id": "c_02830f6e",
+    "villager_id": "v_b1517d4c",
+    "villager_name": "Omkar Lolge",
+    "phone": "+919321089065",
+    "type": "announcement",
+    "status": "completed",
+    "timestamp": "2026-07-10T06:33:58.221433Z",
+    "survey_results": null,
+    "summoning_status": null,
+    "announcement_played": true,
+    "vobiz_uuid": "62710894-a760-46af-9430-972e2311118f",
+    "campaign_details": {
+      "announcement": "\u0938\u0930\u094d\u0935 \u0917\u094d\u0930\u093e\u092e\u0938\u094d\u0925\u093e\u0902\u0928\u094b, \u0915\u0943\u092a\u092f\u093e \u0932\u0915\u094d\u0937 \u0926\u094d\u092f\u093e. \u0935\u093e\u0930\u094d\u0937\u093f\u0915 \u0928\u093f\u0903\u0936\u0941\u0932\u094d\u0915 \u0935\u0948\u0926\u094d\u092f\u0915\u0940\u092f \u0936\u093f\u092c\u093f\u0930 \u092f\u093e \u0930\u0935\u093f\u0935\u093e\u0930\u0940 \u0938\u0915\u093e\u0933\u0940 9 \u0924\u0947 \u0926\u0941\u092a\u093e\u0930\u0940 3 \u0935\u093e\u091c\u0947\u092a\u0930\u094d\u092f\u0902\u0924 \u0938\u093e\u092e\u0941\u0926\u093e\u092f\u093f\u0915 \u0938\u092d\u093e\u0917\u0943\u0939\u093e\u0924 \u0906\u092f\u094b\u091c\u093f\u0924 \u0915\u0947\u0932\u0947 \u0906\u0939\u0947. \u0915\u0943\u092a\u092f\u093e \u0924\u0941\u092e\u091a\u0947 \u0906\u0930\u094b\u0917\u094d\u092f \u0915\u093e\u0930\u094d\u0921 \u0906\u0923\u093e."
+    },
+    "digits_pressed": [],
+    "history": [
+      {
+        "time": "2026-07-10T06:33:58.221450Z",
+        "event": "Campaign call initiated"
+      },
+      {
+        "time": "2026-07-10T06:33:58.804610Z",
+        "event": "Call successfully queued on Vobiz"
+      },
+      {
+        "time": "2026-07-10T06:34:05.872362Z",
+        "event": "Call answered by user"
+      },
+      {
+        "time": "2026-07-10T06:34:05.873807Z",
+        "event": "Broadcast announcement completed"
+      },
+      {
+        "time": "2026-07-10T06:34:33.687492Z",
+        "event": "Call answered by user"
+      },
+      {
+        "time": "2026-07-10T06:34:33.689015Z",
+        "event": "Broadcast announcement completed"
+      }
+    ]
+  },
+  {
+    "id": "c_5e190e40",
+    "villager_id": "v_b1517d4c",
+    "villager_name": "Omkar Lolge",
+    "phone": "+919321089065",
+    "type": "summoning",
+    "status": "answered",
+    "timestamp": "2026-07-10T06:36:08.353737Z",
+    "survey_results": null,
+    "summoning_status": "confirmed",
+    "announcement_played": null,
+    "vobiz_uuid": "bf35ee42-9542-4f91-a6eb-98542176ce90",
+    "campaign_details": {
+      "date": "July 15",
+      "time": "2:00 PM",
+      "purpose": "crop subsidy distribution and document validation"
+    },
+    "digits_pressed": [
+      "9",
+      "1"
+    ],
+    "history": [
+      {
+        "time": "2026-07-10T06:36:08.353752Z",
+        "event": "Campaign call initiated"
+      },
+      {
+        "time": "2026-07-10T06:36:08.653061Z",
+        "event": "Call successfully queued on Vobiz"
+      },
+      {
+        "time": "2026-07-10T06:36:15.904884Z",
+        "event": "Call answered by user"
+      },
+      {
+        "time": "2026-07-10T06:36:59.343219Z",
+        "event": "Key pressed in Summoning Menu: 9"
+      },
+      {
+        "time": "2026-07-10T06:36:59.432528Z",
+        "event": "Call answered by user"
+      },
+      {
+        "time": "2026-07-10T06:37:27.691573Z",
+        "event": "Key pressed in Summoning Menu: 1"
+      },
+      {
+        "time": "2026-07-10T06:37:31.384940Z",
+        "event": "Summoning status finalized to CONFIRMED"
+      },
+      {
+        "time": "2026-07-10T06:37:39.033069Z",
+        "event": "Call answered by user"
+      }
+    ]
+  },
+  {
+    "id": "c_ef1a66eb",
+    "villager_id": "v_b1517d4c",
+    "villager_name": "Omkar Lolge",
+    "phone": "+919321089065",
+    "type": "survey",
+    "status": "queued",
+    "timestamp": "2026-07-10T06:42:16.335946Z",
+    "duration_seconds": 0,
+    "telephony_cost": 0.0,
+    "tts_cost": 1.2975,
+    "total_cost": 1.2975,
+    "survey_results": {},
+    "summoning_status": null,
+    "announcement_played": null,
+    "vobiz_uuid": "01f6e39e-26bc-49c2-b19c-6660fcd0faeb",
+    "campaign_details": {
+      "q1": "Rate water supply cleanliness and frequency: press 1 for poor, up to 5 for excellent.",
+      "q2": "Would you recommend the new road repair scheme? Press 1 for Yes, 2 for No.",
+      "q3": "Overall experience with the Panchayat office: Press 1 for Good, 2 for Neutral, 3 for Poor."
+    },
+    "digits_pressed": [],
+    "history": [
+      {
+        "time": "2026-07-10T06:42:16.335968Z",
+        "event": "Campaign call initiated"
+      },
+      {
+        "time": "2026-07-10T06:42:16.910743Z",
+        "event": "Call successfully queued on Vobiz"
+      }
+    ]
+  },
+  {
+    "id": "c_5959c0dd",
+    "villager_id": "v_b1517d4c",
+    "villager_name": "Omkar Lolge",
+    "phone": "+919321089065",
+    "type": "survey",
+    "status": "answered",
+    "timestamp": "2026-07-10T06:43:05.761257Z",
+    "duration_seconds": 0,
+    "telephony_cost": 0.0,
+    "tts_cost": 1.2975,
+    "total_cost": 1.2975,
+    "survey_results": {},
+    "summoning_status": null,
+    "announcement_played": null,
+    "vobiz_uuid": "fd2ce99f-7d59-4165-94c7-4bac2aeae383",
+    "campaign_details": {
+      "q1": "Rate water supply cleanliness and frequency: press 1 for poor, up to 5 for excellent.",
+      "q2": "Would you recommend the new road repair scheme? Press 1 for Yes, 2 for No.",
+      "q3": "Overall experience with the Panchayat office: Press 1 for Good, 2 for Neutral, 3 for Poor."
+    },
+    "digits_pressed": [],
+    "history": [
+      {
+        "time": "2026-07-10T06:43:05.761277Z",
+        "event": "Campaign call initiated"
+      },
+      {
+        "time": "2026-07-10T06:43:06.018935Z",
+        "event": "Call successfully queued on Vobiz"
+      },
+      {
+        "time": "2026-07-10T06:43:12.682809Z",
+        "event": "Call answered by user"
+      },
+      {
+        "time": "2026-07-10T06:43:48.102481Z",
+        "event": "Call answered by user"
+      }
+    ]
+  },
+  {
+    "id": "c_aef3160e",
+    "villager_id": "v_b1517d4c",
+    "villager_name": "Omkar Lolge",
+    "phone": "+919321089065",
+    "type": "survey",
+    "status": "answered",
+    "timestamp": "2026-07-10T06:43:51.610688Z",
+    "duration_seconds": 0,
+    "telephony_cost": 0.0,
+    "tts_cost": 1.2975,
+    "total_cost": 1.2975,
+    "survey_results": {
+      "q1_rating": 5,
+      "q2_recommend": "yes",
+      "q3_experience": "poor"
+    },
+    "summoning_status": null,
+    "announcement_played": null,
+    "vobiz_uuid": "3a195f7f-0758-4b2c-8301-c896f743ee2e",
+    "campaign_details": {
+      "q1": "\u092a\u093e\u0923\u0940\u092a\u0941\u0930\u0935\u0920\u094d\u092f\u093e\u091a\u0940 \u0938\u094d\u0935\u091a\u094d\u091b\u0924\u093e \u0906\u0923\u093f \u0935\u093e\u0930\u0902\u0935\u093e\u0930\u0924\u093e: \u0916\u0930\u093e\u092c \u0938\u093e\u0920\u0940 1 \u0906\u0923\u093f \u0909\u0924\u094d\u0915\u0943\u0937\u094d\u091f \u0938\u093e\u0920\u0940 5 \u092a\u0930\u094d\u092f\u0902\u0924 \u0926\u093e\u092c\u093e.",
+      "q2": "\u0924\u0941\u092e\u094d\u0939\u0940 \u0928\u0935\u0940\u0928 \u0930\u0938\u094d\u0924\u0947 \u0926\u0941\u0930\u0941\u0938\u094d\u0924\u0940 \u092f\u094b\u091c\u0928\u0947\u091a\u0940 \u0936\u093f\u092b\u093e\u0930\u0938 \u0915\u0930\u093e\u0932 \u0915\u093e? \u0939\u094b\u092f \u0938\u093e\u0920\u0940 1 \u0906\u0923\u093f \u0928\u093e\u0939\u0940 \u0938\u093e\u0920\u0940 2 \u0926\u093e\u092c\u093e.",
+      "q3": "\u092a\u0902\u091a\u093e\u092f\u0924\u0940 \u0915\u093e\u0930\u094d\u092f\u093e\u0932\u092f\u093e\u0924 \u090f\u0915\u0942\u0923 \u0905\u0928\u0941\u092d\u0935: \u091a\u093e\u0902\u0917\u0932\u094d\u092f\u093e\u0938\u093e\u0920\u0940 \u092a\u094d\u0930\u0947\u0938 1, \u0924\u091f\u0938\u094d\u0925\u0924\u0947\u0938\u093e\u0920\u0940 2, \u0916\u0930\u093e\u092c\u0938\u093e\u0920\u0940 3."
+    },
+    "digits_pressed": [
+      "5",
+      "1",
+      "3"
+    ],
+    "history": [
+      {
+        "time": "2026-07-10T06:43:51.610713Z",
+        "event": "Campaign call initiated"
+      },
+      {
+        "time": "2026-07-10T06:43:52.165554Z",
+        "event": "Call successfully queued on Vobiz"
+      },
+      {
+        "time": "2026-07-10T06:44:00.666659Z",
+        "event": "Call answered by user"
+      },
+      {
+        "time": "2026-07-10T06:44:31.655736Z",
+        "event": "Answered Survey Q1: 5"
+      },
+      {
+        "time": "2026-07-10T06:44:47.697607Z",
+        "event": "Answered Survey Q2: 1"
+      },
+      {
+        "time": "2026-07-10T06:45:01.160461Z",
+        "event": "Answered Survey Q3: 3"
+      },
+      {
+        "time": "2026-07-10T06:45:01.163080Z",
+        "event": "Survey Campaign Completed"
+      },
+      {
+        "time": "2026-07-10T06:45:07.242955Z",
+        "event": "Call answered by user"
+      }
+    ]
+  },
+  {
+    "id": "c_cebbbe17",
+    "villager_id": "v_b1517d4c",
+    "villager_name": "Omkar Lolge",
+    "phone": "+919321089065",
+    "type": "summoning",
+    "status": "completed",
+    "timestamp": "2026-07-10T06:48:18.893504Z",
+    "duration_seconds": 44,
+    "telephony_cost": 0.4,
+    "tts_cost": 1.6575,
+    "total_cost": 2.0575,
+    "survey_results": null,
+    "summoning_status": "pending",
+    "announcement_played": null,
+    "vobiz_uuid": "86c7550a-eb0a-4e36-a026-725633a0bf1d",
+    "campaign_details": {
+      "date": "July 15",
+      "time": "2:00 PM",
+      "purpose": "crop subsidy distribution and document validation"
+    },
+    "digits_pressed": [
+      "9"
+    ],
+    "history": [
+      {
+        "time": "2026-07-10T06:48:18.893524Z",
+        "event": "Campaign call initiated"
+      },
+      {
+        "time": "2026-07-10T06:48:19.194441Z",
+        "event": "Call successfully queued on Vobiz"
+      },
+      {
+        "time": "2026-07-10T06:48:26.426164Z",
+        "event": "Call answered by user"
+      },
+      {
+        "time": "2026-07-10T06:48:57.057153Z",
+        "event": "Key pressed in Summoning Menu: 9"
+      },
+      {
+        "time": "2026-07-10T06:48:58.951048Z",
+        "event": "Call answered by user"
+      },
+      {
+        "time": "2026-07-10T06:49:09.547883Z",
+        "event": "Call hung up (Status: completed)"
+      }
+    ]
+  },
+  {
+    "id": "c_5ecb4fa0",
+    "villager_id": "v_b1517d4c",
+    "villager_name": "Omkar Lolge",
+    "phone": "+919321089065",
+    "type": "survey",
+    "status": "answered",
+    "timestamp": "2026-07-10T06:52:14.528071Z",
+    "duration_seconds": 0,
+    "telephony_cost": 0.0,
+    "tts_cost": 1.2975,
+    "total_cost": 1.2975,
+    "survey_results": {},
+    "summoning_status": null,
+    "announcement_played": null,
+    "vobiz_uuid": "78054b38-b7a0-44a0-a95b-3e67e24099bd",
+    "campaign_details": {
+      "q1": "Rate water supply cleanliness and frequency: press 1 for poor, up to 5 for excellent.",
+      "q2": "Would you recommend the new road repair scheme? Press 1 for Yes, 2 for No.",
+      "q3": "Overall experience with the Panchayat office: Press 1 for Good, 2 for Neutral, 3 for Poor."
+    },
+    "digits_pressed": [],
+    "history": [
+      {
+        "time": "2026-07-10T06:52:14.528097Z",
+        "event": "Campaign call initiated"
+      },
+      {
+        "time": "2026-07-10T06:52:15.048948Z",
+        "event": "Call successfully queued on Vobiz"
+      },
+      {
+        "time": "2026-07-10T06:52:24.909676Z",
+        "event": "Call answered by user"
+      }
+    ]
+  },
+  {
+    "id": "c_af3db3b5",
+    "villager_id": "v_b1517d4c",
+    "villager_name": "Omkar Lolge",
+    "phone": "+919321089065",
+    "type": "survey",
+    "status": "completed",
+    "timestamp": "2026-07-10T06:55:05.040596Z",
+    "duration_seconds": 20,
+    "telephony_cost": 0.4,
+    "tts_cost": 1.2975,
+    "total_cost": 1.6975,
+    "survey_results": {},
+    "summoning_status": null,
+    "announcement_played": null,
+    "vobiz_uuid": "7997d2e8-38c8-45fe-95c1-3c89e9773fd5",
+    "campaign_details": {
+      "q1": "Rate water supply cleanliness and frequency: press 1 for poor, up to 5 for excellent.",
+      "q2": "Would you recommend the new road repair scheme? Press 1 for Yes, 2 for No.",
+      "q3": "Overall experience with the Panchayat office: Press 1 for Good, 2 for Neutral, 3 for Poor."
+    },
+    "digits_pressed": [],
+    "history": [
+      {
+        "time": "2026-07-10T06:55:05.040611Z",
+        "event": "Campaign call initiated"
+      },
+      {
+        "time": "2026-07-10T06:55:05.475480Z",
+        "event": "Call successfully queued on Vobiz"
+      },
+      {
+        "time": "2026-07-10T06:55:31.006372Z",
+        "event": "Call hung up (Status: completed)"
+      }
+    ]
+  },
+  {
+    "id": "c_997f88e0",
+    "villager_id": "v_b1517d4c",
+    "villager_name": "Omkar Lolge",
+    "phone": "+919321089065",
+    "type": "summoning",
+    "status": "completed",
+    "timestamp": "2026-07-10T06:55:53.025779Z",
+    "duration_seconds": 19,
+    "telephony_cost": 0.4,
+    "tts_cost": 1.6455,
+    "total_cost": 2.0455,
+    "survey_results": null,
+    "summoning_status": "pending",
+    "announcement_played": null,
+    "vobiz_uuid": "51b90e07-6977-408c-9ae7-37c11ffd175b",
+    "campaign_details": {
+      "date": "July 15",
+      "time": "2:00 PM",
+      "purpose": "\u092a\u0940\u0915 \u0905\u0928\u0941\u0926\u093e\u0928 \u0935\u093f\u0924\u0930\u0923 \u0906\u0923\u093f \u0915\u093e\u0917\u0926\u092a\u0924\u094d\u0930\u093e\u0902\u091a\u0940 \u092a\u0921\u0924\u093e\u0933\u0923\u0940"
+    },
+    "digits_pressed": [],
+    "history": [
+      {
+        "time": "2026-07-10T06:55:53.025791Z",
+        "event": "Campaign call initiated"
+      },
+      {
+        "time": "2026-07-10T06:55:53.431703Z",
+        "event": "Call successfully queued on Vobiz"
+      },
+      {
+        "time": "2026-07-10T06:56:03.735026Z",
+        "event": "Call answered by user"
+      },
+      {
+        "time": "2026-07-10T06:56:22.171268Z",
+        "event": "Call hung up (Status: completed)"
+      }
+    ]
+  },
+  {
+    "id": "c_f4e1cc87",
+    "villager_id": "v_b1517d4c",
+    "villager_name": "Omkar Lolge",
+    "phone": "+919321089065",
+    "type": "summoning",
+    "status": "completed",
+    "timestamp": "2026-07-10T06:56:16.465023Z",
+    "duration_seconds": 43,
+    "telephony_cost": 0.4,
+    "tts_cost": 1.6455,
+    "total_cost": 2.0455,
+    "survey_results": null,
+    "summoning_status": "confirmed",
+    "announcement_played": null,
+    "vobiz_uuid": "6f5c9689-9077-47d4-a05c-150096d08f2a",
+    "campaign_details": {
+      "date": "July 15",
+      "time": "2:00 PM",
+      "purpose": "\u092a\u0940\u0915 \u0905\u0928\u0941\u0926\u093e\u0928 \u0935\u093f\u0924\u0930\u0923 \u0906\u0923\u093f \u0915\u093e\u0917\u0926\u092a\u0924\u094d\u0930\u093e\u0902\u091a\u0940 \u092a\u0921\u0924\u093e\u0933\u0923\u0940"
+    },
+    "digits_pressed": [
+      "1"
+    ],
+    "history": [
+      {
+        "time": "2026-07-10T06:56:16.465039Z",
+        "event": "Campaign call initiated"
+      },
+      {
+        "time": "2026-07-10T06:56:17.701179Z",
+        "event": "Call successfully queued on Vobiz"
+      },
+      {
+        "time": "2026-07-10T06:56:24.268992Z",
+        "event": "Call answered by user"
+      },
+      {
+        "time": "2026-07-10T06:56:56.774352Z",
+        "event": "Key pressed in Summoning Menu: 1"
+      },
+      {
+        "time": "2026-07-10T06:56:56.777201Z",
+        "event": "Summoning status finalized to CONFIRMED"
+      },
+      {
+        "time": "2026-07-10T06:57:06.674130Z",
+        "event": "Call hung up (Status: completed)"
+      }
+    ]
+  },
+  {
+    "id": "c_543fe85e",
+    "villager_id": "v_516bb00c",
+    "villager_name": "Sajesh Dugam",
+    "phone": "+919665265736",
+    "type": "survey",
+    "status": "completed",
+    "timestamp": "2026-07-10T08:14:53.627037Z",
+    "duration_seconds": 57,
+    "telephony_cost": 0.4,
+    "tts_cost": 1.2975,
+    "total_cost": 1.6975,
+    "survey_results": {
+      "q1_rating": 5,
+      "q2_recommend": "yes",
+      "q3_experience": "good"
+    },
+    "summoning_status": null,
+    "announcement_played": null,
+    "vobiz_uuid": "2a856cf1-2b89-4b3d-9a0a-696fa413ee16",
+    "campaign_details": {
+      "q1": "Rate water supply cleanliness and frequency: press 1 for poor, up to 5 for excellent.",
+      "q2": "Would you recommend the new road repair scheme? Press 1 for Yes, 2 for No.",
+      "q3": "Overall experience with the Panchayat office: Press 1 for Good, 2 for Neutral, 3 for Poor."
+    },
+    "digits_pressed": [
+      "5",
+      "1",
+      "1"
+    ],
+    "history": [
+      {
+        "time": "2026-07-10T08:14:53.627050Z",
+        "event": "Campaign call initiated"
+      },
+      {
+        "time": "2026-07-10T08:15:23.948595Z",
+        "event": "Call successfully queued on Vobiz"
+      },
+      {
+        "time": "2026-07-10T08:15:34.650413Z",
+        "event": "Call answered by user"
+      },
+      {
+        "time": "2026-07-10T08:16:03.192757Z",
+        "event": "Answered Survey Q1: 5"
+      },
+      {
+        "time": "2026-07-10T08:16:15.747217Z",
+        "event": "Answered Survey Q2: 1"
+      },
+      {
+        "time": "2026-07-10T08:16:24.106373Z",
+        "event": "Answered Survey Q3: 1"
+      },
+      {
+        "time": "2026-07-10T08:16:24.109649Z",
+        "event": "Survey Campaign Completed"
+      },
+      {
+        "time": "2026-07-10T08:16:30.831032Z",
+        "event": "Call hung up (Status: completed)"
+      }
+    ]
+  },
+  {
+    "id": "c_77ba97bd",
+    "villager_id": "v_516bb00c",
+    "villager_name": "Sajesh Dugam",
+    "phone": "+919665265736",
+    "type": "announcement",
+    "status": "completed",
+    "timestamp": "2026-07-10T08:18:44.939385Z",
+    "duration_seconds": 19,
+    "telephony_cost": 0.4,
+    "tts_cost": 0.4635,
+    "total_cost": 0.8635,
+    "survey_results": null,
+    "summoning_status": null,
+    "announcement_played": true,
+    "vobiz_uuid": "efa622c8-9997-411b-ab9d-989871a84f36",
+    "campaign_details": {
+      "announcement": "Attention all villagers. The annual free medical camp is scheduled at the community hall this Sunday from 9 AM to 3 PM. Please bring your health cards."
+    },
+    "digits_pressed": [],
+    "history": [
+      {
+        "time": "2026-07-10T08:18:44.939406Z",
+        "event": "Campaign call initiated"
+      },
+      {
+        "time": "2026-07-10T08:19:15.319762Z",
+        "event": "Call successfully queued on Vobiz"
+      },
+      {
+        "time": "2026-07-10T08:19:21.138974Z",
+        "event": "Call answered by user"
+      },
+      {
+        "time": "2026-07-10T08:19:21.141942Z",
+        "event": "Broadcast announcement completed"
+      },
+      {
+        "time": "2026-07-10T08:19:39.514430Z",
+        "event": "Call hung up (Status: completed)"
+      }
+    ]
+  },
+  {
+    "id": "c_89042a42",
+    "villager_id": "v_516bb00c",
+    "villager_name": "Sajesh Dugam",
+    "phone": "+919665265736",
+    "type": "survey",
+    "status": "answered",
+    "timestamp": "2026-07-10T08:21:04.265304Z",
+    "duration_seconds": 0,
+    "telephony_cost": 0.0,
+    "tts_cost": 1.2975,
+    "total_cost": 1.2975,
+    "survey_results": {},
+    "summoning_status": null,
+    "announcement_played": null,
+    "vobiz_uuid": "6b54e4ca-b282-44cd-9a29-82f79bccdf74",
+    "campaign_details": {
+      "q1": "Rate water supply cleanliness and frequency: press 1 for poor, up to 5 for excellent.",
+      "q2": "Would you recommend the new road repair scheme? Press 1 for Yes, 2 for No.",
+      "q3": "Overall experience with the Panchayat office: Press 1 for Good, 2 for Neutral, 3 for Poor."
+    },
+    "digits_pressed": [],
+    "history": [
+      {
+        "time": "2026-07-10T08:21:04.265338Z",
+        "event": "Campaign call initiated"
+      },
+      {
+        "time": "2026-07-10T08:21:34.655225Z",
+        "event": "Call successfully queued on Vobiz"
+      },
+      {
+        "time": "2026-07-10T08:21:39.734475Z",
+        "event": "Call answered by user"
+      }
+    ]
+  },
+  {
+    "id": "c_fded31f8",
+    "villager_id": "v_516bb00c",
+    "villager_name": "Sajesh Dugam",
+    "phone": "+919665265736",
+    "type": "summoning",
+    "status": "completed",
+    "timestamp": "2026-07-10T08:25:13.277046Z",
+    "duration_seconds": 71,
+    "telephony_cost": 0.8,
+    "tts_cost": 1.6455,
+    "total_cost": 2.4455,
+    "survey_results": null,
+    "summoning_status": "pending",
+    "announcement_played": null,
+    "vobiz_uuid": "97bc8985-0895-420d-a33d-8d9d928dbe0a",
+    "campaign_details": {
+      "date": "July 15",
+      "time": "2:00 PM",
+      "purpose": "\u092a\u0940\u0915 \u0905\u0928\u0941\u0926\u093e\u0928 \u0935\u093f\u0924\u0930\u0923 \u0906\u0923\u093f \u0915\u093e\u0917\u0926\u092a\u0924\u094d\u0930\u093e\u0902\u091a\u0940 \u092a\u0921\u0924\u093e\u0933\u0923\u0940"
+    },
+    "digits_pressed": [
+      "9",
+      "9"
+    ],
+    "history": [
+      {
+        "time": "2026-07-10T08:25:13.277063Z",
+        "event": "Campaign call initiated"
+      },
+      {
+        "time": "2026-07-10T08:25:43.615896Z",
+        "event": "Call successfully queued on Vobiz"
+      },
+      {
+        "time": "2026-07-10T08:25:48.175344Z",
+        "event": "Call answered by user"
+      },
+      {
+        "time": "2026-07-10T08:26:17.419222Z",
+        "event": "Key pressed in Summoning Menu: 9"
+      },
+      {
+        "time": "2026-07-10T08:26:17.497043Z",
+        "event": "Call answered by user"
+      },
+      {
+        "time": "2026-07-10T08:26:49.300647Z",
+        "event": "Key pressed in Summoning Menu: 9"
+      },
+      {
+        "time": "2026-07-10T08:26:49.379847Z",
+        "event": "Call answered by user"
+      },
+      {
+        "time": "2026-07-10T08:26:58.690582Z",
+        "event": "Call hung up (Status: completed)"
+      }
+    ]
+  },
+  {
+    "id": "c_020396ee",
+    "villager_id": "v_b1517d4c",
+    "villager_name": "Omkar Lolge",
+    "phone": "+919321089065",
+    "type": "survey",
+    "status": "completed",
+    "timestamp": "2026-07-10T08:34:26.971848Z",
+    "duration_seconds": 47,
+    "telephony_cost": 0.4,
+    "tts_cost": 1.2975,
+    "total_cost": 1.6975,
+    "survey_results": {
+      "q1_rating": 5,
+      "q2_recommend": "yes",
+      "q3_experience": "good"
+    },
+    "summoning_status": null,
+    "announcement_played": null,
+    "vobiz_uuid": "3cab3240-592c-494d-983d-3c9dab05dead",
+    "campaign_details": {
+      "q1": "Rate water supply cleanliness and frequency: press 1 for poor, up to 5 for excellent.",
+      "q2": "Would you recommend the new road repair scheme? Press 1 for Yes, 2 for No.",
+      "q3": "Overall experience with the Panchayat office: Press 1 for Good, 2 for Neutral, 3 for Poor."
+    },
+    "digits_pressed": [
+      "5",
+      "1",
+      "1"
+    ],
+    "history": [
+      {
+        "time": "2026-07-10T08:34:26.971870Z",
+        "event": "Campaign call initiated"
+      },
+      {
+        "time": "2026-07-10T08:34:27.294538Z",
+        "event": "Call successfully queued on Vobiz"
+      },
+      {
+        "time": "2026-07-10T08:34:37.631551Z",
+        "event": "Call answered by user"
+      },
+      {
+        "time": "2026-07-10T08:34:58.976974Z",
+        "event": "Answered Survey Q1: 5"
+      },
+      {
+        "time": "2026-07-10T08:35:07.858217Z",
+        "event": "Answered Survey Q2: 1"
+      },
+      {
+        "time": "2026-07-10T08:35:16.892210Z",
+        "event": "Answered Survey Q3: 1"
+      },
+      {
+        "time": "2026-07-10T08:35:16.896461Z",
+        "event": "Survey Campaign Completed"
+      },
+      {
+        "time": "2026-07-10T08:35:23.753337Z",
+        "event": "Call hung up (Status: completed)"
+      }
+    ]
+  },
+  {
+    "id": "c_ef605672",
+    "villager_id": "v_b1517d4c",
+    "villager_name": "Omkar Lolge",
+    "phone": "+919321089065",
+    "type": "summoning",
+    "status": "completed",
+    "timestamp": "2026-07-10T08:36:31.291876Z",
+    "duration_seconds": 69,
+    "telephony_cost": 0.8,
+    "tts_cost": 1.6455,
+    "total_cost": 2.4455,
+    "survey_results": null,
+    "summoning_status": "confirmed",
+    "announcement_played": null,
+    "vobiz_uuid": "40f8f3ce-e0df-45cd-b6fa-256a9d75bb4d",
+    "campaign_details": {
+      "date": "July 15",
+      "time": "2:00 PM",
+      "purpose": "\u092a\u0940\u0915 \u0905\u0928\u0941\u0926\u093e\u0928 \u0935\u093f\u0924\u0930\u0923 \u0906\u0923\u093f \u0915\u093e\u0917\u0926\u092a\u0924\u094d\u0930\u093e\u0902\u091a\u0940 \u092a\u0921\u0924\u093e\u0933\u0923\u0940"
+    },
+    "digits_pressed": [
+      "9",
+      "1"
+    ],
+    "history": [
+      {
+        "time": "2026-07-10T08:36:31.291891Z",
+        "event": "Campaign call initiated"
+      },
+      {
+        "time": "2026-07-10T08:36:31.625974Z",
+        "event": "Call successfully queued on Vobiz"
+      },
+      {
+        "time": "2026-07-10T08:36:41.238251Z",
+        "event": "Call answered by user"
+      },
+      {
+        "time": "2026-07-10T08:37:11.275118Z",
+        "event": "Key pressed in Summoning Menu: 9"
+      },
+      {
+        "time": "2026-07-10T08:37:11.362207Z",
+        "event": "Call answered by user"
+      },
+      {
+        "time": "2026-07-10T08:37:42.403013Z",
+        "event": "Key pressed in Summoning Menu: 1"
+      },
+      {
+        "time": "2026-07-10T08:37:42.408795Z",
+        "event": "Summoning status finalized to CONFIRMED"
+      },
+      {
+        "time": "2026-07-10T08:37:49.814584Z",
+        "event": "Call hung up (Status: completed)"
+      }
+    ]
+  },
+  {
+    "id": "c_4834c4d4",
+    "villager_id": "v_b1517d4c",
+    "villager_name": "Omkar Lolge",
+    "phone": "+919321089065",
+    "type": "survey",
+    "status": "busy",
+    "timestamp": "2026-07-14T05:11:55.324429Z",
+    "duration_seconds": 0,
+    "telephony_cost": 0.0,
+    "tts_cost": 1.2975,
+    "total_cost": 1.2975,
+    "survey_results": {},
+    "summoning_status": null,
+    "announcement_played": null,
+    "vobiz_uuid": "4bf41379-4f3f-436d-8269-af12e843516e",
+    "campaign_details": {
+      "q1": "Rate water supply cleanliness and frequency: press 1 for poor, up to 5 for excellent.",
+      "q2": "Would you recommend the new road repair scheme? Press 1 for Yes, 2 for No.",
+      "q3": "Overall experience with the Panchayat office: Press 1 for Good, 2 for Neutral, 3 for Poor."
+    },
+    "digits_pressed": [],
+    "history": [
+      {
+        "time": "2026-07-14T05:11:55.324444Z",
+        "event": "Campaign call initiated"
+      },
+      {
+        "time": "2026-07-14T05:11:55.757140Z",
+        "event": "Call successfully queued on Vobiz"
+      },
+      {
+        "time": "2026-07-14T05:12:17.094860Z",
+        "event": "Call hung up (Status: busy)"
+      }
+    ]
+  },
+  {
+    "id": "c_646f0e2c",
+    "villager_id": "v_b1517d4c",
+    "villager_name": "Omkar Lolge",
+    "phone": "+919321089065",
+    "type": "summoning",
+    "status": "busy",
+    "timestamp": "2026-07-14T05:12:55.933074Z",
+    "duration_seconds": 0,
+    "telephony_cost": 0.0,
+    "tts_cost": 1.6455,
+    "total_cost": 1.6455,
+    "survey_results": null,
+    "summoning_status": "pending",
+    "announcement_played": null,
+    "vobiz_uuid": "5b562893-b4e8-4a29-983f-9ab2272f99c9",
+    "campaign_details": {
+      "date": "July 15",
+      "time": "2:00 PM",
+      "purpose": "\u092a\u0940\u0915 \u0905\u0928\u0941\u0926\u093e\u0928 \u0935\u093f\u0924\u0930\u0923 \u0906\u0923\u093f \u0915\u093e\u0917\u0926\u092a\u0924\u094d\u0930\u093e\u0902\u091a\u0940 \u092a\u0921\u0924\u093e\u0933\u0923\u0940"
+    },
+    "digits_pressed": [],
+    "history": [
+      {
+        "time": "2026-07-14T05:12:55.933093Z",
+        "event": "Campaign call initiated"
+      },
+      {
+        "time": "2026-07-14T05:12:56.352956Z",
+        "event": "Call successfully queued on Vobiz"
+      },
+      {
+        "time": "2026-07-14T05:13:17.591451Z",
+        "event": "Call hung up (Status: busy)"
+      }
+    ]
+  },
+  {
+    "id": "c_630b560a",
+    "villager_id": "v_b1517d4c",
+    "villager_name": "Omkar Lolge",
+    "phone": "+919321089065",
+    "type": "summoning",
+    "status": "queued",
+    "timestamp": "2026-07-14T05:14:30.441030Z",
+    "duration_seconds": 0,
+    "telephony_cost": 0.0,
+    "tts_cost": 1.6455,
+    "total_cost": 1.6455,
+    "survey_results": null,
+    "summoning_status": "pending",
+    "announcement_played": null,
+    "vobiz_uuid": "fc1be020-0729-49d1-8051-78ec2ee00704",
+    "campaign_details": {
+      "date": "July 15",
+      "time": "2:00 PM",
+      "purpose": "\u092a\u0940\u0915 \u0905\u0928\u0941\u0926\u093e\u0928 \u0935\u093f\u0924\u0930\u0923 \u0906\u0923\u093f \u0915\u093e\u0917\u0926\u092a\u0924\u094d\u0930\u093e\u0902\u091a\u0940 \u092a\u0921\u0924\u093e\u0933\u0923\u0940"
+    },
+    "digits_pressed": [],
+    "history": [
+      {
+        "time": "2026-07-14T05:14:30.441046Z",
+        "event": "Campaign call initiated"
+      },
+      {
+        "time": "2026-07-14T05:14:32.090685Z",
+        "event": "Call successfully queued on Vobiz"
+      }
+    ]
+  },
+  {
+    "id": "c_98933683",
+    "villager_id": "v_51301355",
+    "villager_name": "Anil Phunde",
+    "phone": "+919421531159",
+    "type": "survey",
+    "status": "busy",
+    "timestamp": "2026-07-14T05:41:42.964108Z",
+    "duration_seconds": 0,
+    "telephony_cost": 0.0,
+    "tts_cost": 1.2975,
+    "total_cost": 1.2975,
+    "survey_results": {},
+    "summoning_status": null,
+    "announcement_played": null,
+    "vobiz_uuid": "2018a379-8a06-4e34-a1fd-e74c7007d10c",
+    "campaign_details": {
+      "q1": "\u092a\u093e\u0923\u0940\u092a\u0941\u0930\u0935\u0920\u094d\u092f\u093e\u091a\u0940 \u0938\u094d\u0935\u091a\u094d\u091b\u0924\u093e \u0906\u0923\u093f \u0935\u093e\u0930\u0902\u0935\u093e\u0930\u0924\u093e: \u0916\u0930\u093e\u092c \u0938\u093e\u0920\u0940 1 \u0906\u0923\u093f \u0909\u0924\u094d\u0915\u0943\u0937\u094d\u091f \u0938\u093e\u0920\u0940 5 \u092a\u0930\u094d\u092f\u0902\u0924 \u0926\u093e\u092c\u093e.",
+      "q2": "\u0924\u0941\u092e\u094d\u0939\u0940 \u0928\u0935\u0940\u0928 \u0930\u0938\u094d\u0924\u0947 \u0926\u0941\u0930\u0941\u0938\u094d\u0924\u0940 \u092f\u094b\u091c\u0928\u0947\u091a\u0940 \u0936\u093f\u092b\u093e\u0930\u0938 \u0915\u0930\u093e\u0932 \u0915\u093e? \u0939\u094b\u092f \u0938\u093e\u0920\u0940 1 \u0906\u0923\u093f \u0928\u093e\u0939\u0940 \u0938\u093e\u0920\u0940 2 \u0926\u093e\u092c\u093e.",
+      "q3": "\u092a\u0902\u091a\u093e\u092f\u0924\u0940 \u0915\u093e\u0930\u094d\u092f\u093e\u0932\u092f\u093e\u0924 \u090f\u0915\u0942\u0923 \u0905\u0928\u0941\u092d\u0935: \u091a\u093e\u0902\u0917\u0932\u094d\u092f\u093e\u0938\u093e\u0920\u0940 \u092a\u094d\u0930\u0947\u0938 1, \u0924\u091f\u0938\u094d\u0925\u0924\u0947\u0938\u093e\u0920\u0940 2, \u0916\u0930\u093e\u092c\u0938\u093e\u0920\u0940 3."
+    },
+    "digits_pressed": [],
+    "history": [
+      {
+        "time": "2026-07-14T05:41:42.964143Z",
+        "event": "Campaign call initiated"
+      },
+      {
+        "time": "2026-07-14T05:41:45.262334Z",
+        "event": "Call successfully queued on Vobiz"
+      },
+      {
+        "time": "2026-07-14T05:41:55.336259Z",
+        "event": "Call hung up (Status: busy)"
+      }
+    ]
+  },
+  {
+    "id": "c_a057aa93",
+    "villager_id": "v_51301355",
+    "villager_name": "Anil Phunde",
+    "phone": "+919421531159",
+    "type": "summoning",
+    "status": "busy",
+    "timestamp": "2026-07-14T05:42:10.892286Z",
+    "duration_seconds": 0,
+    "telephony_cost": 0.0,
+    "tts_cost": 1.6455,
+    "total_cost": 1.6455,
+    "survey_results": null,
+    "summoning_status": "pending",
+    "announcement_played": null,
+    "vobiz_uuid": "405ddbec-3cb7-451c-bbaa-e263ad598956",
+    "campaign_details": {
+      "date": "July 15",
+      "time": "2:00 PM",
+      "purpose": "\u092a\u0940\u0915 \u0905\u0928\u0941\u0926\u093e\u0928 \u0935\u093f\u0924\u0930\u0923 \u0906\u0923\u093f \u0915\u093e\u0917\u0926\u092a\u0924\u094d\u0930\u093e\u0902\u091a\u0940 \u092a\u0921\u0924\u093e\u0933\u0923\u0940"
+    },
+    "digits_pressed": [],
+    "history": [
+      {
+        "time": "2026-07-14T05:42:10.892305Z",
+        "event": "Campaign call initiated"
+      },
+      {
+        "time": "2026-07-14T05:42:11.142954Z",
+        "event": "Call successfully queued on Vobiz"
+      },
+      {
+        "time": "2026-07-14T05:42:21.206151Z",
+        "event": "Call hung up (Status: busy)"
+      }
+    ]
+  },
+  {
+    "id": "c_8dc554cc",
+    "villager_id": "v_4d69dbaa",
+    "villager_name": "anil phunde",
+    "phone": "+917972695119",
+    "type": "summoning",
+    "status": "completed",
+    "timestamp": "2026-07-14T05:44:30.977975Z",
+    "duration_seconds": 82,
+    "telephony_cost": 0.8,
+    "tts_cost": 1.6455,
+    "total_cost": 2.4455,
+    "survey_results": null,
+    "summoning_status": "pending",
+    "announcement_played": null,
+    "vobiz_uuid": "d5bab181-d48a-4906-926e-70c871f45a44",
+    "campaign_details": {
+      "date": "July 15",
+      "time": "2:00 PM",
+      "purpose": "\u092a\u0940\u0915 \u0905\u0928\u0941\u0926\u093e\u0928 \u0935\u093f\u0924\u0930\u0923 \u0906\u0923\u093f \u0915\u093e\u0917\u0926\u092a\u0924\u094d\u0930\u093e\u0902\u091a\u0940 \u092a\u0921\u0924\u093e\u0933\u0923\u0940"
+    },
+    "digits_pressed": [
+      "9"
+    ],
+    "history": [
+      {
+        "time": "2026-07-14T05:44:30.977995Z",
+        "event": "Campaign call initiated"
+      },
+      {
+        "time": "2026-07-14T05:44:31.473187Z",
+        "event": "Call successfully queued on Vobiz"
+      },
+      {
+        "time": "2026-07-14T05:44:48.071090Z",
+        "event": "Call answered by user"
+      },
+      {
+        "time": "2026-07-14T05:45:27.408256Z",
+        "event": "Key pressed in Summoning Menu: 9"
+      },
+      {
+        "time": "2026-07-14T05:45:27.503520Z",
+        "event": "Call answered by user"
+      },
+      {
+        "time": "2026-07-14T05:46:09.734856Z",
+        "event": "Call hung up (Status: completed)"
+      }
+    ]
+  },
+  {
+    "id": "c_7323692b",
+    "villager_id": "v_b1517d4c",
+    "villager_name": "Omkar Lolge",
+    "phone": "+919321089065",
+    "type": "survey",
+    "status": "failed",
+    "timestamp": "2026-09-03T14:18:39.712803Z",
+    "duration_seconds": 0,
+    "telephony_cost": 0.0,
+    "tts_cost": 1.2975,
+    "total_cost": 1.2975,
+    "survey_results": {},
+    "summoning_status": null,
+    "announcement_played": null,
+    "vobiz_uuid": null,
+    "campaign_details": {
+      "q1": "Rate water supply cleanliness and frequency: press 1 for poor, up to 5 for excellent.",
+      "q2": "Would you recommend the new road repair scheme? Press 1 for Yes, 2 for No.",
+      "q3": "Overall experience with the Panchayat office: Press 1 for Good, 2 for Neutral, 3 for Poor."
+    },
+    "digits_pressed": [],
+    "history": [
+      {
+        "time": "2026-09-03T14:18:39.712852Z",
+        "event": "Campaign call initiated"
+      },
+      {
+        "time": "2026-09-03T14:18:40.326518Z",
+        "event": "Vobiz trigger failed"
+      }
+    ]
+  },
+  {
+    "id": "c_b369e035",
+    "villager_id": "v_b1517d4c",
+    "villager_name": "Omkar Lolge",
+    "phone": "+919321089065",
+    "type": "survey",
+    "status": "failed",
+    "timestamp": "2026-09-03T14:21:19.143759Z",
+    "duration_seconds": 0,
+    "telephony_cost": 0.0,
+    "tts_cost": 1.2975,
+    "total_cost": 1.2975,
+    "survey_results": {},
+    "summoning_status": null,
+    "announcement_played": null,
+    "vobiz_uuid": null,
+    "campaign_details": {
+      "q1": "Rate water supply cleanliness and frequency: press 1 for poor, up to 5 for excellent.",
+      "q2": "Would you recommend the new road repair scheme? Press 1 for Yes, 2 for No.",
+      "q3": "Overall experience with the Panchayat office: Press 1 for Good, 2 for Neutral, 3 for Poor."
+    },
+    "digits_pressed": [],
+    "history": [
+      {
+        "time": "2026-09-03T14:21:19.143789Z",
+        "event": "Campaign call initiated"
+      },
+      {
+        "time": "2026-09-03T14:21:19.414922Z",
+        "event": "Vobiz trigger failed"
+      }
+    ]
+  },
+  {
+    "id": "c_509c9a37",
+    "villager_id": "v_516bb00c",
+    "villager_name": "Sajesh Dugam",
+    "phone": "+919665265736",
+    "type": "survey",
+    "status": "failed",
+    "timestamp": "2026-09-03T14:21:19.143842Z",
+    "duration_seconds": 0,
+    "telephony_cost": 0.0,
+    "tts_cost": 1.2975,
+    "total_cost": 1.2975,
+    "survey_results": {},
+    "summoning_status": null,
+    "announcement_played": null,
+    "vobiz_uuid": null,
+    "campaign_details": {
+      "q1": "Rate water supply cleanliness and frequency: press 1 for poor, up to 5 for excellent.",
+      "q2": "Would you recommend the new road repair scheme? Press 1 for Yes, 2 for No.",
+      "q3": "Overall experience with the Panchayat office: Press 1 for Good, 2 for Neutral, 3 for Poor."
+    },
+    "digits_pressed": [],
+    "history": [
+      {
+        "time": "2026-09-03T14:21:19.143845Z",
+        "event": "Campaign call initiated"
+      },
+      {
+        "time": "2026-09-03T14:21:19.618501Z",
+        "event": "Vobiz trigger failed"
+      }
+    ]
+  }
+]

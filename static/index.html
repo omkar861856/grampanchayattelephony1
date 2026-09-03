@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPT - Gram Panchayat Telephony Dashboard</title>
+    <meta name="description" content="Sleek glassmorphic voice telephony campaign manager for Gram Panchayat administration.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+    <!-- MAIN APP DASHBOARD -->
+    <div id="app-container" class="app-container">
+        
+        <!-- SIDE NAVIGATION -->
+        <aside class="sidebar glass-panel">
+            <div class="logo-area">
+                <div class="logo-icon gradient-primary">GPT</div>
+                <div>
+                    <h1 class="logo-text">GPT</h1>
+                    <span class="logo-sub">Panchayat Telephony</span>
+                </div>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active" data-tab="overview">
+                    <i class="fa-solid fa-chart-pie"></i> Overview
+                </a>
+                <a href="#" class="nav-item" data-tab="outbound">
+                    <i class="fa-solid fa-phone-volume"></i> Outbound Campaign
+                </a>
+                <a href="#" class="nav-item" data-tab="villagers">
+                    <i class="fa-solid fa-users"></i> Villagers Directory
+                </a>
+                <a href="#" class="nav-item" data-tab="logs">
+                    <i class="fa-solid fa-clock-rotate-left"></i> Call History
+                </a>
+                <a href="#" class="nav-item" data-tab="prompts">
+                    <i class="fa-solid fa-microphone-lines"></i> Voice Library
+                </a>
+            </nav>
+
+            <div class="system-status glass-panel">
+                <div class="status-row">
+                    <span>Telephony Mode:</span>
+                    <span id="telephony-mode-badge" class="badge badge-success">Live (Vobiz)</span>
+                </div>
+                <div class="status-row">
+                    <span>Connection Status:</span>
+                    <span class="status-dot online"></span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT AREA -->
+        <main class="main-content">
+            
+            <!-- TOP BAR -->
+            <header class="top-bar glass-panel">
+                <div class="welcome-message">
+                    <h2>Namaskar, Panchayat Administrator</h2>
+                    <p id="current-date-time"></p>
+                </div>
+                <div class="quick-status">
+                    <div class="status-item">
+                        <i class="fa-solid fa-signal text-teal"></i>
+                        <div>
+                            <span class="status-label">Webhook URL</span>
+                            <span class="status-value truncate" id="system-webhook-url">http://localhost:8000</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- SIMULATOR WIDGET AREA (FLOATING PHONE SIMULATOR FOR MOCK CALLS) -->
+
+
+            <!-- TAB PANELS -->
+            <div class="tab-panels">
+                
+                <!-- TAB 1: OVERVIEW -->
+                <div id="tab-overview" class="tab-panel active">
+                    <!-- Stat Cards -->
+                    <div class="stat-cards">
+                        <div class="stat-card glass-panel border-glow">
+                            <div class="stat-header">
+                                <span class="stat-title">Total Villagers</span>
+                                <i class="fa-solid fa-users text-teal"></i>
+                            </div>
+                            <h3 id="stat-total-villagers" class="stat-number">0</h3>
+                            <p class="stat-desc">Registered in database</p>
+                        </div>
+                        <div class="stat-card glass-panel border-glow">
+                            <div class="stat-header">
+                                <span class="stat-title">Call Success Rate</span>
+                                <i class="fa-solid fa-circle-check text-green"></i>
+                            </div>
+                            <h3 id="stat-success-rate" class="stat-number">0%</h3>
+                            <p class="stat-desc">Outbound answered rate</p>
+                        </div>
+                        <div class="stat-card glass-panel border-glow">
+                            <div class="stat-header">
+                                <span class="stat-title">Total Surveys</span>
+                                <i class="fa-solid fa-square-poll-vertical text-cyan"></i>
+                            </div>
+                            <h3 id="stat-total-surveys" class="stat-number">0</h3>
+                            <p class="stat-desc">Completed feedback surveys</p>
+                        </div>
+                        <div class="stat-card glass-panel border-glow">
+                            <div class="stat-header">
+                                <span class="stat-title">Pending Summonings</span>
+                                <i class="fa-solid fa-calendar-day text-purple"></i>
+                            </div>
+                            <h3 id="stat-pending-summons" class="stat-number">0</h3>
+                            <p class="stat-desc">Awaiting confirmations</p>
+                        </div>
+                    </div>
+
+                    <!-- Visual Analytics Graphs -->
+                    <div class="dashboard-grid">
+                        <div class="chart-card glass-panel">
+                            <h3>Survey Ratings Distribution</h3>
+                            <p class="chart-subtitle">Cleanliness & frequency feedback averages</p>
+                            <div class="chart-container">
+                                <canvas id="chart-survey-ratings"></canvas>
+                            </div>
+                        </div>
+
+                        <div class="chart-card glass-panel">
+                            <h3>Visit Summoning Responses</h3>
+                            <p class="chart-subtitle">Panchayat summoning meeting outcomes</p>
+                            <div class="chart-container">
+                                <canvas id="chart-summon-responses"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 2: OUTBOUND CAMPAIGN -->
+                <div id="tab-outbound" class="tab-panel">
+                    <div class="campaign-layout">
+                        <!-- Left Side: Villagers Selection -->
+                        <div class="campaign-selection glass-panel">
+                            <div class="section-title-row">
+                                <h3>Select Villagers for Campaign</h3>
+                                <div class="selection-meta">
+                                    <span id="selected-count">0 selected</span>
+                                </div>
+                            </div>
+                            
+                            <div class="filter-row">
+                                <input type="text" id="campaign-search" placeholder="Search by name or phone...">
+                                <select id="campaign-ward-filter">
+                                    <option value="">All Villages / Wards</option>
+                                </select>
+                            </div>
+
+                            <div class="table-container campaign-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th><input type="checkbox" id="check-all-campaign"></th>
+                                            <th>Name</th>
+                                            <th>Phone</th>
+                                             <th>Village / Ward</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="campaign-villagers-body">
+                                        <!-- Populated via Javascript -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Right Side: Campaign Parameters -->
+                        <div class="campaign-settings glass-panel border-glow">
+                            <h3>Configure Voice Campaign <span class="cost-tooltip" style="font-size: 11px; font-weight: normal; color: var(--text-dim);" title="Vobiz Outbound Calling Cost: ~₹0.40 per call minute."><i class="fa-solid fa-circle-info"></i> Call Cost</span></h3>
+                            
+                            <div class="tabs-sub">
+                                <button class="tab-sub active" data-type="survey">
+                                    <i class="fa-solid fa-square-poll-vertical"></i> Survey
+                                </button>
+                                <button class="tab-sub" data-type="summoning">
+                                    <i class="fa-solid fa-calendar-check"></i> Summoning
+                                </button>
+                                <button class="tab-sub" data-type="announcement">
+                                    <i class="fa-solid fa-bullhorn"></i> Broadcast
+                                </button>
+                            </div>
+
+                            <!-- Campaign Forms -->
+                            <div id="campaign-form-container" class="campaign-form-container">
+                                
+                                <!-- Survey Form -->
+                                <div id="form-survey" class="campaign-form-step active">
+                                    <p class="form-intro">Trigger a 3-question DTMF interactive survey.</p>
+                                    <div class="form-group">
+                                        <label for="survey-q1">Question 1: Service Rating (1-5)</label>
+                                        <textarea id="survey-q1" rows="2">Rate water supply cleanliness and frequency: press 1 for poor, up to 5 for excellent.</textarea>
+                                        <button type="button" class="btn btn-secondary btn-mini btn-preview-tts" data-input-id="survey-q1"><i class="fa-solid fa-volume-high"></i> Preview Voice</button>
+                                        <span id="preview-cost-survey-q1" class="preview-cost-badge"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="survey-q2">Question 2: Yes/No Recommendation</label>
+                                        <textarea id="survey-q2" rows="2">Would you recommend the new road repair scheme? Press 1 for Yes, 2 for No.</textarea>
+                                        <button type="button" class="btn btn-secondary btn-mini btn-preview-tts" data-input-id="survey-q2"><i class="fa-solid fa-volume-high"></i> Preview Voice</button>
+                                        <span id="preview-cost-survey-q2" class="preview-cost-badge"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="survey-q3">Question 3: Overall Satisfaction (1-3)</label>
+                                        <textarea id="survey-q3" rows="2">Overall experience with the Panchayat office: Press 1 for Good, 2 for Neutral, 3 for Poor.</textarea>
+                                        <button type="button" class="btn btn-secondary btn-mini btn-preview-tts" data-input-id="survey-q3"><i class="fa-solid fa-volume-high"></i> Preview Voice</button>
+                                        <span id="preview-cost-survey-q3" class="preview-cost-badge"></span>
+                                    </div>
+                                </div>
+
+                                <!-- Summoning Form -->
+                                <div id="form-summoning" class="campaign-form-step">
+                                    <p class="form-intro">Summon villagers to the Panchayat office with options to confirm/cancel.</p>
+                                    <div class="form-group">
+                                        <label for="summon-date">Meeting Date</label>
+                                        <input type="text" id="summon-date" value="July 15">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="summon-time">Meeting Time</label>
+                                        <input type="text" id="summon-time" value="2:00 PM">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="summon-purpose">Purpose of Summoning</label>
+                                        <textarea id="summon-purpose" rows="2">crop subsidy distribution and document validation</textarea>
+                                    </div>
+                                    <div style="margin-top: 10px;">
+                                        <button type="button" class="btn btn-secondary btn-mini btn-preview-tts" data-preview-type="summoning"><i class="fa-solid fa-volume-high"></i> Preview Spoken Summoning</button>
+                                        <span id="preview-cost-summoning" class="preview-cost-badge"></span>
+                                    </div>
+                                </div>
+
+                                <!-- Announcement Form -->
+                                <div id="form-announcement" class="campaign-form-step">
+                                    <p class="form-intro">Deliver an announcement spoken message directly to multiple villagers.</p>
+                                    <div class="form-group">
+                                        <label for="announce-message">Broadcast Message (TTS)</label>
+                                        <textarea id="announce-message" rows="5">Attention all villagers. The annual free medical camp is scheduled at the community hall this Sunday from 9 AM to 3 PM. Please bring your health cards.</textarea>
+                                        <button type="button" class="btn btn-secondary btn-mini btn-preview-tts" data-input-id="announce-message"><i class="fa-solid fa-volume-high"></i> Preview Voice</button>
+                                        <span id="preview-cost-announce-message" class="preview-cost-badge"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <button id="btn-launch-campaign" class="btn btn-primary btn-block btn-large">
+                                <i class="fa-solid fa-rocket"></i> Launch Outbound Campaign
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 3: VILLAGERS DIRECTORY -->
+                <div id="tab-villagers" class="tab-panel">
+                    <div class="directory-card glass-panel">
+                        <div class="section-title-row">
+                            <h3>Panchayat Villagers Directory</h3>
+                            <button id="btn-open-add-villager" class="btn btn-primary">
+                                <i class="fa-solid fa-plus"></i> Add Villager
+                            </button>
+                        </div>
+
+                        <div class="filter-row">
+                            <input type="text" id="directory-search" placeholder="Search by name, phone or village...">
+                            <select id="directory-ward-filter">
+                                <option value="">All Villages / Wards</option>
+                            </select>
+                        </div>
+
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Phone Number</th>
+                                         <th>Village / Ward</th>
+                                        <th>Status</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="directory-table-body">
+                                    <!-- Populated via Javascript -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 4: CALL LOGS -->
+                <div id="tab-logs" class="tab-panel">
+                    <div class="logs-card glass-panel">
+                        <div class="section-title-row">
+                            <h3>Full Outbound Campaign Call Logs</h3>
+                            <button id="btn-export-logs" class="btn btn-secondary">
+                                <i class="fa-solid fa-file-export"></i> Export CSV
+                            </button>
+                        </div>
+
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Call ID</th>
+                                        <th>Villager</th>
+                                        <th>Phone</th>
+                                        <th>Campaign Type</th>
+                                        <th>Status</th>
+                                        <th>Duration</th>
+                                        <th>Cost</th>
+                                        <th>Timestamp</th>
+                                        <th>Outcome Details</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="logs-table-body">
+                                    <!-- Populated via Javascript -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 5: VOICE LIBRARY -->
+                <div id="tab-prompts" class="tab-panel">
+                    <div class="panel-header" style="margin-bottom: 20px;">
+                        <h2>Voice Prompts Library</h2>
+                        <p>Configure central audio templates and pre-generate high-quality Sarvam AI voices. <span class="cost-tooltip" title="Sarvam AI Bulbul TTS Cost: ~₹0.15 per 1,000 characters. Audio loaded from local cache is free!"><i class="fa-solid fa-circle-info"></i> Cost Info</span></p>
+                    </div>
+                    
+                    <div class="prompts-grid" id="prompts-list-container">
+                        <!-- Populated via Javascript -->
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+
+    <!-- ADD/EDIT VILLAGER MODAL -->
+    <div id="villager-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-card glass-panel">
+            <div class="modal-header">
+                <h3 id="modal-title">Add New Villager</h3>
+                <button id="btn-close-modal" class="btn-close-small"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <form id="villager-form">
+                    <input type="hidden" id="form-v-id">
+                    <div class="form-group">
+                        <label for="form-v-name">Full Name</label>
+                        <input type="text" id="form-v-name" required placeholder="e.g. Ramesh Kumar">
+                    </div>
+                    <div class="form-group">
+                        <label for="form-v-phone">Mobile Phone (with E.164 country code)</label>
+                        <input type="tel" id="form-v-phone" required placeholder="e.g. +919876543210" value="+91">
+                    </div>
+                    <div class="form-group">
+                        <label for="form-v-ward">Village / Ward</label>
+                        <input type="text" id="form-v-ward" required placeholder="e.g. Rajpur Village - Ward 4">
+                    </div>
+                    <div class="form-group">
+                        <label for="form-v-status">Status</label>
+                        <select id="form-v-status">
+                            <option value="Active">Active</option>
+                            <option value="Inactive">Inactive</option>
+                        </select>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="btn-cancel-modal" class="btn btn-secondary">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Save Villager</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- CALL HISTORY DETAIL MODAL -->
+    <div id="call-detail-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-card glass-panel border-glow" style="max-width: 500px;">
+            <div class="modal-header">
+                <h3>Call Session Audit Trail</h3>
+                <button id="btn-close-detail-modal" class="btn-close-small"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body" style="padding: 20px;">
+                <div class="call-meta-info" style="margin-bottom: 20px; font-size: 13px; color: #94a3b8; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; line-height: 1.5;">
+                    <div><strong>Call ID:</strong> <span id="detail-call-id">-</span></div>
+                    <div><strong>Recipient:</strong> <span id="detail-recipient">-</span></div>
+                    <div><strong>Phone:</strong> <span id="detail-phone">-</span></div>
+                    <div><strong>Campaign:</strong> <span id="detail-type">-</span></div>
+                    <div><strong>Status:</strong> <span id="detail-status" class="badge">-</span></div>
+                    <div><strong>Digits Pressed:</strong> <span id="detail-digits">-</span></div>
+                    <div><strong>Duration:</strong> <span id="detail-duration">-</span></div>
+                    <div><strong>Total Cost:</strong> <span id="detail-cost" style="color: var(--teal); font-weight: 600;">-</span></div>
+                </div>
+                <div style="border-top: 1px solid rgba(255,255,255,0.06); padding-top: 15px;">
+                    <h4 style="margin-bottom: 12px; font-size: 14px; color: white;">Call Timeline Events</h4>
+                    <ul class="timeline-list" id="detail-timeline-list" style="list-style: none; margin: 0; padding: 0; max-height: 250px; overflow-y: auto; display: flex; flex-direction: column; gap: 10px;">
+                        <!-- Timeline entries -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <!-- Core App Logic -->
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "v_b1517d4c",
+    "name": "Omkar Lolge",
+    "phone": "+919321089065",
+    "village_ward": "Dehere",
+    "status": "Active"
+  },
+  {
+    "id": "v_516bb00c",
+    "name": "Sajesh Dugam",
+    "phone": "+919665265736",
+    "village_ward": "Dehere",
+    "status": "Active"
+  },
+  {
+    "id": "v_51301355",
+    "name": "Anil Phunde",
+    "phone": "+919421531159",
+    "village_ward": "Ahmednagar",
+    "status": "Active"
+  },
+  {
+    "id": "v_4d69dbaa",
+    "name": "anil phunde",
+    "phone": "+917972695119",
+    "village_ward": "nagar",
+    "status": "Active"
+  }
+]
